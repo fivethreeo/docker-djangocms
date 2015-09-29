@@ -37,7 +37,7 @@ RUN djangocms \
   --i18n=yes \
   --use-tz=yes \
   --timezone=Europe/London \
-  --reversion=no \
+  --reversion=yes \
   --permissions=yes \
   --languages=en \
   --django-version=stable \
