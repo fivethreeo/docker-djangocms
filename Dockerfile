@@ -14,6 +14,7 @@ RUN apk add --update \
     uwsgi \
     uwsgi-python \
     build-base \
+    curl \
   && rm -rf /var/cache/apk/*
   
 RUN curl https://bootstrap.pypa.io/get-pip.py | python  
