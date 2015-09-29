@@ -47,6 +47,7 @@ RUN djangocms \
   --parent-dir . \
   --cms-version=stable \
   --no-input \
+  --no-sync \
   -s \
     default
 
