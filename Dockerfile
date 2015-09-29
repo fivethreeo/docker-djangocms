@@ -11,8 +11,6 @@ RUN apk add --update \
     python-dev \
     zlib \
     zlib-dev \
-    libpng \
-    libpng-dev \
     libjpeg-turbo \
     libjpeg-turbo-dev \
     py-virtualenv \
@@ -38,11 +36,11 @@ RUN djangocms \
   --i18n=yes \
   --use-tz=yes \
   --timezone=Europe/London \
-  --reversion=yes \
+  --reversion=no \
   --permissions=yes \
   --languages=en \
   --django-version=stable \
-  --bootstrap=no \
+  --bootstrap=yes \
   --starting-page=no \
   --db="sqlite:////opt/djangocms/default.db" \
   --parent-dir . \
