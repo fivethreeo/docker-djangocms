@@ -16,6 +16,7 @@ RUN apk add --update \
     build-base \
     libjpeg \
     zlib \
+    zlib-dev \
   && rm -rf /var/cache/apk/*
   
 # see http://docs.docker.com/articles/dockerfile_best-practices/
