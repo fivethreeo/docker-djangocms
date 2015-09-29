@@ -47,7 +47,6 @@ RUN djangocms \
   --parent-dir . \
   --cms-version=stable \
   --no-input \
-  --dump-requirements \
     default
 
 COPY requirements-django.txt /opt/djangocms/
