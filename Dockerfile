@@ -9,8 +9,10 @@ ENV CMS_ADMIN_PASSW djangocms
 RUN apk add --update \
     python \
     python-dev \
-    libjpeg \
     zlib \
+    zlib-dev \
+    libjpeg-turbo \
+    libjpeg-turbo-dev \
     py-pillow \
     py-virtualenv \
     uwsgi \
