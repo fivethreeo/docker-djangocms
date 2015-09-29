@@ -13,7 +13,6 @@ RUN apk add --update \
     zlib-dev \
     libjpeg-turbo \
     libjpeg-turbo-dev \
-    py-pillow \
     py-virtualenv \
     uwsgi \
     uwsgi-python \
