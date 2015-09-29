@@ -30,7 +30,6 @@ RUN cp -R /lib/* /usr/lib/
 
 COPY requirements.txt /opt/djangocms/
 RUN pip install -r requirements.txt
-RUN pip install -e git+https://github.com/etianen/django-reversion/#egg=django-reversion --no-deps
 
 RUN pip install pillow
 
@@ -48,6 +47,7 @@ RUN djangocms \
   --parent-dir . \
   --cms-version=stable \
   --no-input \
+  --dump-requirements \
     default
 
 COPY requirements-django.txt /opt/djangocms/
