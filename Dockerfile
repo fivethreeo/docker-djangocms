@@ -40,8 +40,9 @@ RUN djangocms \
   --cms-version=stable \
   --no-input \
     default
-    
-RUN pip install cmsplugin-filer==0.10 djangocms-cascade==0.3.2
+
+COPY requirements-django.txt /opt/djangocms/
+RUN pip install -r requirements-django.txt
 
 COPY create_superuser.sh /opt/djangocms/
 
