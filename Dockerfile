@@ -18,6 +18,7 @@ RUN apk add --update \
     uwsgi-python \
     build-base \
     curl \
+    git \
   && rm -rf /var/cache/apk/*
   
 # see http://docs.docker.com/articles/dockerfile_best-practices/
