@@ -1,0 +1,8 @@
+# fixing versions
+
+# https://pip.readthedocs.org/en/1.1/requirements.html
+# Two Scoops of Django book page 50
+
+django-extensions==1.4.0
+django-storages==1.1.8
+django-compressor==1.4
