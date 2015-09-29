@@ -41,6 +41,8 @@ RUN djangocms \
   --no-input \
     default
 
+RUN pip install cmsplugin-filer==0.10 djangocms-cascade==0.3.2
+
 COPY create_superuser.sh /opt/djangocms/
 
 RUN ./create_superuser.sh
