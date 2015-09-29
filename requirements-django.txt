@@ -5,6 +5,7 @@
 
 django-extensions==1.4.0
 django-storages==1.1.8
+easy-thumbnails==2.1
 django-compressor==1.4
 cmsplugin-filer==0.10
 djangocms-cascade==0.3.2
