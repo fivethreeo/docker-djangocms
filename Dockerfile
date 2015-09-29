@@ -11,7 +11,6 @@ RUN apk add --update \
     python-dev \
     py-pip \
     py-virtualenv \
-    py-django \
     uwsgi \
     uwsgi-python \
     build-base \
