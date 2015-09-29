@@ -14,7 +14,8 @@ RUN apk add --update \
     uwsgi \
     uwsgi-python \
     build-base \
-    libjpeg \
+    libjpeg-turbo \
+    libjpeg-turbo-dev \
     zlib \
     zlib-dev \
   && rm -rf /var/cache/apk/*
