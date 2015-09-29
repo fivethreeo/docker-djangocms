@@ -11,13 +11,10 @@ RUN apk add --update \
     python-dev \
     py-pip \
     py-virtualenv \
+    py-pillow \
     uwsgi \
     uwsgi-python \
     build-base \
-    libjpeg-turbo \
-    libjpeg-turbo-dev \
-    zlib \
-    zlib-dev \
   && rm -rf /var/cache/apk/*
   
 # see http://docs.docker.com/articles/dockerfile_best-practices/
