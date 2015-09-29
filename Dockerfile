@@ -1,20 +1,23 @@
-FROM ubuntu:14.04
-MAINTAINER Manuel Weiss "mweiss@moonfruit.com"
-
-# see http://docs.docker.com/articles/dockerfile_best-practices/
+FROM gliderlabs/alpine:3.1
+MAINTAINER Øyvind Saltvik "oyvind@gmail.com"
 
 # set your values here:
 ENV CMS_ADMIN_USERNAME admin
 ENV CMS_ADMIN_EMAIL nobody@example.com
 ENV CMS_ADMIN_PASSW djangocms
 
-RUN apt-get update && apt-get install -y \
-        python-pip \
-        python-pil \
-        python-django \
-        python-psycopg2 \
-        uwsgi \
-        uwsgi-plugin-python
+RUN apk add --update \
+    python \
+    python-dev \
+    py-pip \
+    py-virtualenv \
+    py-django \
+    uwsgi \
+    uwsgi-python \
+    build-base \
+  && rm -rf /var/cache/apk/*
+  
+# see http://docs.docker.com/articles/dockerfile_best-practices/
 
 RUN mkdir -p /opt/djangocms
 WORKDIR /opt/djangocms
