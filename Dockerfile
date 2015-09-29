@@ -27,6 +27,8 @@ RUN apk add --update \
 RUN mkdir -p /opt/djangocms
 WORKDIR /opt/djangocms
 
+RUN cp -R /lib/* /usr/lib/
+
 COPY requirements.txt /opt/djangocms/
 RUN pip install -r requirements.txt
 
