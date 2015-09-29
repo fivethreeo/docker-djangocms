@@ -55,7 +55,7 @@ RUN pip install -r requirements-django.txt
 
 COPY create_superuser.sh /opt/djangocms/
 
-RUN ./create_superuser.sh
+RUN sh create_superuser.sh
 RUN python manage.py syncdb --noinput
 RUN python manage.py migrate
 
