@@ -5,3 +5,4 @@
 
 djangocms-installer==0.5.4
 boto==2.32.1 # for S3
+pillow
