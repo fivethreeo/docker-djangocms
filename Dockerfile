@@ -10,6 +10,7 @@ RUN apk add --update \
     python \
     python-dev \
     py-pillow \
+    py-six \
     uwsgi \
     uwsgi-python \
     build-base \
