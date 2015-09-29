@@ -29,7 +29,7 @@ RUN cp -R /lib/* /usr/lib/
 
 COPY requirements.txt /opt/djangocms/
 RUN pip install -r requirements.txt
-RUN pip install -e https://github.com/etianen/django-reversion/#egg=django-reversion --no-deps
+RUN pip install -e git+https://github.com/etianen/django-reversion/#egg=django-reversion --no-deps
 
 RUN pip install pillow
 
