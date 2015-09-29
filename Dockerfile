@@ -14,6 +14,8 @@ RUN apk add --update \
     uwsgi \
     uwsgi-python \
     build-base \
+    libjpeg \
+    zlib \
   && rm -rf /var/cache/apk/*
   
 # see http://docs.docker.com/articles/dockerfile_best-practices/
