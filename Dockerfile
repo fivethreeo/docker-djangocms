@@ -11,6 +11,8 @@ RUN apk add --update \
     python-dev \
     zlib \
     zlib-dev \
+    libpng \
+    libpng-dev \
     libjpeg-turbo \
     libjpeg-turbo-dev \
     py-virtualenv \
@@ -27,6 +29,8 @@ WORKDIR /opt/djangocms
 
 COPY requirements.txt /opt/djangocms/
 RUN pip install -r requirements.txt
+
+RUN pip install pillow
 
 RUN djangocms \
   --i18n=yes \
