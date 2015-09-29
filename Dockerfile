@@ -9,7 +9,6 @@ ENV CMS_ADMIN_PASSW djangocms
 RUN apk add --update \
     python \
     python-dev \
-    py-virtualenv \
     py-pillow \
     uwsgi \
     uwsgi-python \
@@ -18,6 +17,8 @@ RUN apk add --update \
   && rm -rf /var/cache/apk/*
   
 RUN curl https://bootstrap.pypa.io/get-pip.py | python  
+
+RUN apk add --update py-virtualenv && rm -rf /var/cache/apk/*
 
 # see http://docs.docker.com/articles/dockerfile_best-practices/
 
