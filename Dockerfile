@@ -33,7 +33,7 @@ RUN djangocms \
   --permissions=yes \
   --languages=en \
   --django-version=stable \
-  --bootstrap=yes \
+  --bootstrap=no \
   --starting-page=no \
   --db="sqlite:////opt/djangocms/default.db" \
   --parent-dir . \
@@ -41,22 +41,6 @@ RUN djangocms \
   --no-input \
     default
     
-RUN djangocms \
-  --i18n=yes \
-  --use-tz=yes \
-  --timezone=Europe/London \
-  --reversion=yes \
-  --permissions=yes \
-  --languages=en \
-  --django-version=stable \
-  --bootstrap=yes \
-  --starting-page=no \
-  --db="sqlite:////opt/djangocms/default.db" \
-  --parent-dir . \
-  --cms-version=stable \
-  --no-input \
-    default
-
 RUN pip install cmsplugin-filer==0.10 djangocms-cascade==0.3.2
 
 COPY create_superuser.sh /opt/djangocms/
